@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>University of Washington — Seattle, United States | EvoEco global map</title>
+<meta name="description" content="Global map of the EvoEco deployment at University of Washington, Seattle, United States.">
+<link rel="stylesheet" href="../assets/map.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">EvoEco deployment &middot; Higher education</p>
+  <h1>University of Washington</h1>
+  <p class="sub">EvoEco brings smart waste data to the University of Washington&#x27;s Seattle campus.</p>
+
+  <div class="mapcard" id="map"></div>
+
+  <dl class="facts">
+    <div class="fact"><dt>Site</dt><dd>UW Seattle campus</dd></div>
+    <div class="fact"><dt>City</dt><dd>Seattle</dd></div>
+    <div class="fact"><dt>Region</dt><dd>Washington</dd></div>
+    <div class="fact"><dt>Country</dt><dd>United States</dd></div>
+    <div class="fact"><dt>Coordinates</dt><dd class="mono">47°39'19.1"N 122°18'12.6"W</dd></div>
+  </dl>
+
+  <p class="foot">
+    <a href="../index.html">All locations</a>
+  </p>
+</div>
+
+<script src="../assets/world.js"></script>
+<script src="../assets/locations.js"></script>
+<script src="../assets/map.js"></script>
+<script>
+  var slug = "university-of-washington-seattle";
+  var focus = window.LOCATIONS.filter(function (l) { return l.slug === slug; })[0];
+  window.renderMap(document.getElementById('map'), focus, window.LOCATIONS);
+</script>
+</body>
+</html>

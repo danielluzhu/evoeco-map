@@ -306,5 +306,19 @@
     "announced": null,
     "post": null,
     "headline": "EvoEco brings smart waste data to the Architect of the Capitol in Washington, DC."
+  },
+  {
+    "slug": "university-of-washington-seattle",
+    "customer": "University of Washington",
+    "site": "UW Seattle campus",
+    "city": "Seattle",
+    "region": "Washington",
+    "country": "United States",
+    "lat": 47.6553,
+    "lon": -122.3035,
+    "sector": "Higher education",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to the University of Washington's Seattle campus."
   }
 ]
