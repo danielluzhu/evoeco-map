@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mastercard — San Francisco, United States | EvoEco global map</title>
+<meta name="description" content="Global map of the EvoEco deployment at Mastercard, San Francisco, United States.">
+<link rel="stylesheet" href="../assets/map.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">EvoEco deployment &middot; Financial services</p>
+  <h1>Mastercard</h1>
+  <p class="sub">EvoEco Teams Up with Mastercard in San Francisco to Revolutionize Waste Management</p>
+
+  <div class="mapcard" id="map"></div>
+
+  <dl class="facts">
+    <div class="fact"><dt>Site</dt><dd>San Francisco office</dd></div>
+    <div class="fact"><dt>City</dt><dd>San Francisco</dd></div>
+    <div class="fact"><dt>Region</dt><dd>California</dd></div>
+    <div class="fact"><dt>Country</dt><dd>United States</dd></div>
+    <div class="fact"><dt>Coordinates</dt><dd class="mono">37°47'19.3"N 122°23'54.6"W</dd></div>
+    <div class="fact"><dt>Announced</dt><dd>November 24, 2023</dd></div>
+  </dl>
+
+  <p class="foot">
+    <a href="https://evoeco.substack.com/p/evoeco-teams-up-with-mastercard-in">Read the announcement &rarr;</a>
+    <span class="sep">&middot;</span>
+    <a href="../index.html">All locations</a>
+  </p>
+</div>
+
+<script src="../assets/world.js"></script>
+<script src="../assets/locations.js"></script>
+<script src="../assets/map.js"></script>
+<script>
+  var slug = "mastercard-san-francisco";
+  var focus = window.LOCATIONS.filter(function (l) { return l.slug === slug; })[0];
+  window.renderMap(document.getElementById('map'), focus, window.LOCATIONS);
+</script>
+</body>
+</html>
