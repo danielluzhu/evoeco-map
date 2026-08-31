@@ -27,6 +27,52 @@
     return deg + '°' + min + "'" + sec + '"' + h;
   }
 
+  // Sites in the same metro project to within a pin's width of each other — eight
+  // Bay Area sites land inside two map units. Nudge overlapping pins apart just
+  // enough to be separately visible, and draw a leader back to the true point.
+  var MIN_SEP = 6.5;
+  function layout(all, fixedSlug) {
+    var p = all.map(function (l) {
+      var x = px(l.lon), y = py(l.lat);
+      return { loc: l, x: x, y: y, ax: x, ay: y, fixed: l.slug === fixedSlug };
+    });
+    for (var iter = 0; iter < 400; iter++) {
+      var moved = false;
+      for (var i = 0; i < p.length; i++) {
+        for (var j = i + 1; j < p.length; j++) {
+          var dx = p[j].x - p[i].x, dy = p[j].y - p[i].y;
+          var d = Math.sqrt(dx * dx + dy * dy);
+          if (d >= MIN_SEP) continue;
+          if (d < 1e-6) { dx = (i % 2 ? 1 : -1) * 0.6; dy = (j % 2 ? 1 : -1) * 0.6; d = 0.85; }
+          var ux = dx / d, uy = dy / d, push = (MIN_SEP - d) / 2;
+          // A focused pin holds its true position; its crosshair and label depend on it.
+          if (p[i].fixed) { p[j].x += ux * push * 2; p[j].y += uy * push * 2; }
+          else if (p[j].fixed) { p[i].x -= ux * push * 2; p[i].y -= uy * push * 2; }
+          else { p[i].x -= ux * push; p[i].y -= uy * push; p[j].x += ux * push; p[j].y += uy * push; }
+          moved = true;
+        }
+      }
+      // Constant pull home, so pins settle as close to true position as separation allows.
+      for (var k = 0; k < p.length; k++) {
+        if (p[k].fixed) { p[k].x = p[k].ax; p[k].y = p[k].ay; continue; }
+        p[k].x += (p[k].ax - p[k].x) * 0.05;
+        p[k].y += (p[k].ay - p[k].y) * 0.05;
+      }
+      if (!moved) break;
+    }
+    p.forEach(function (q) {
+      q.displaced = Math.sqrt((q.x - q.ax) * (q.x - q.ax) + (q.y - q.ay) * (q.y - q.ay)) > 0.6;
+    });
+    return p;
+  }
+
+  function leader(q) {
+    if (!q.displaced) return '';
+    return '<path class="leader" d="M' + q.ax.toFixed(2) + ' ' + q.ay.toFixed(2) +
+      'L' + q.x.toFixed(2) + ' ' + q.y.toFixed(2) + '"/>' +
+      '<circle class="anchor" cx="' + q.ax.toFixed(2) + '" cy="' + q.ay.toFixed(2) + '" r="0.9"/>';
+  }
+
   window.formatCoords = function (lat, lon) {
     return dms(lat, 'N', 'S') + ' ' + dms(lon, 'E', 'W');
   };
@@ -47,14 +93,16 @@
 
     // Every other site gets a full pin too, held back so the focus still leads.
     if (all) {
-      for (var j = 0; j < all.length; j++) {
-        if (all[j].slug === focus.slug) continue;
-        var ox = px(all[j].lon).toFixed(2), oy = py(all[j].lat).toFixed(2);
-        s += '<g class="site-ctx">';
-        s += '<circle class="ctx-halo" cx="' + ox + '" cy="' + oy + '" r="6"/>';
-        s += '<circle class="ctx-pin" cx="' + ox + '" cy="' + oy + '" r="2.6"/>';
-        s += '<circle class="hit" cx="' + ox + '" cy="' + oy + '" r="9"><title>' +
-          esc(all[j].customer + ' — ' + all[j].city + ', ' + all[j].country) + '</title></circle>';
+      var pts = layout(all, focus.slug);
+      for (var j = 0; j < pts.length; j++) {
+        var q = pts[j];
+        if (q.loc.slug === focus.slug) continue;
+        var ox = q.x.toFixed(2), oy = q.y.toFixed(2);
+        s += '<g class="site-ctx">' + leader(q);
+        s += '<circle class="ctx-halo" cx="' + ox + '" cy="' + oy + '" r="4.2"/>';
+        s += '<circle class="ctx-pin" cx="' + ox + '" cy="' + oy + '" r="2.1"/>';
+        s += '<circle class="hit" cx="' + ox + '" cy="' + oy + '" r="7"><title>' +
+          esc(q.loc.customer + ' — ' + q.loc.city + ', ' + q.loc.country) + '</title></circle>';
         s += '</g>';
       }
     }
@@ -92,14 +140,16 @@
     for (var i = 0; i < c.length; i++) {
       s += '<path class="country" d="' + c[i].d + '"><title>' + esc(c[i].name) + '</title></path>';
     }
-    for (var j = 0; j < all.length; j++) {
-      var loc = all[j], x = px(loc.lon).toFixed(2), y = py(loc.lat).toFixed(2);
+    var pts = layout(all, null);
+    for (var j = 0; j < pts.length; j++) {
+      var q = pts[j], loc = q.loc, x = q.x.toFixed(2), y = q.y.toFixed(2);
       var label = esc(loc.customer + ' — ' + loc.city + ', ' + loc.country);
       s += '<g class="site" data-slug="' + esc(loc.slug) + '" role="button" tabindex="0" aria-label="' + label + '">';
-      s += '<circle class="halo" cx="' + x + '" cy="' + y + '" r="7"/>';
-      s += '<circle class="pin" cx="' + x + '" cy="' + y + '" r="3.2"/>';
+      s += leader(q);
+      s += '<circle class="halo" cx="' + x + '" cy="' + y + '" r="4.8"/>';
+      s += '<circle class="pin" cx="' + x + '" cy="' + y + '" r="2.6"/>';
       // Invisible, generously sized hit target — the drawn pin is too small to click reliably.
-      s += '<circle class="hit" cx="' + x + '" cy="' + y + '" r="11"><title>' + label + '</title></circle>';
+      s += '<circle class="hit" cx="' + x + '" cy="' + y + '" r="8"><title>' + label + '</title></circle>';
       s += '</g>';
     }
     s += '</svg>';

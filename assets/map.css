@@ -165,3 +165,7 @@ a { color: var(--accent); }
 .hint { color: var(--dim); font-size: 13px; margin: 12px 0 0; }
 
 .card.is-selected { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+
+/* Leader from a nudged pin back to its true coordinate. */
+.leader { stroke: var(--accent); stroke-width: 0.55; opacity: 0.75; fill: none; vector-effect: non-scaling-stroke; }
+.anchor { fill: var(--accent); opacity: 0.75; }
