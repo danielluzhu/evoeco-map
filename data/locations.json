@@ -11,7 +11,10 @@
     "sector": "Eco-city development",
     "announced": "2023-03-07",
     "post": "https://evoeco.substack.com/p/evoeco-partners-with-neom-to-pioneer",
-    "headline": "EvoEco Partners with NEOM to Pioneer Sustainable Waste Management in The Line"
+    "headline": "EvoEco Partners with NEOM to Pioneer Sustainable Waste Management in The Line",
+    "logo": "neom-the-line.png",
+    "initials": "NL",
+    "logoTile": "light"
   },
   {
     "slug": "northrop-grumman-redondo-beach",
@@ -25,7 +28,10 @@
     "sector": "Aerospace & defense",
     "announced": "2023-03-31",
     "post": "https://evoeco.substack.com/p/evoeco-partners-with-northrop-grumman",
-    "headline": "EvoEco Partners with Northrop Grumman in Redondo Beach to Elevate Sustainability in Aerospace"
+    "headline": "EvoEco Partners with Northrop Grumman in Redondo Beach to Elevate Sustainability in Aerospace",
+    "logo": "northrop-grumman-redondo-beach.png",
+    "initials": "NG",
+    "logoTile": "light"
   },
   {
     "slug": "bmw-manufacturing-greer",
@@ -39,7 +45,10 @@
     "sector": "Automotive manufacturing",
     "announced": "2023-05-26",
     "post": "https://evoeco.substack.com/p/evoeco-partners-with-bmw-manufacturing",
-    "headline": "EvoEco Partners with BMW Manufacturing in Greer, South Carolina to Drive Sustainability Forward"
+    "headline": "EvoEco Partners with BMW Manufacturing in Greer, South Carolina to Drive Sustainability Forward",
+    "logo": "bmw-manufacturing-greer.png",
+    "initials": "BM",
+    "logoTile": "light"
   },
   {
     "slug": "javits-center-new-york",
@@ -53,7 +62,10 @@
     "sector": "Events & conventions",
     "announced": "2023-06-03",
     "post": "https://evoeco.substack.com/p/evoeco-partners-with-javits-center",
-    "headline": "EvoEco Partners with Javits Center to Bring Sustainability to NYC's Premier Event Space"
+    "headline": "EvoEco Partners with Javits Center to Bring Sustainability to NYC's Premier Event Space",
+    "logo": "javits-center-new-york.png",
+    "initials": "JC",
+    "logoTile": "light"
   },
   {
     "slug": "ygnacio-center-walnut-creek",
@@ -67,7 +79,10 @@
     "sector": "Commercial real estate",
     "announced": "2023-06-24",
     "post": "https://evoeco.substack.com/p/evoeco-partners-with-ygnacio-center",
-    "headline": "EvoEco Partners with Ygnacio Center to Elevate Sustainability in Commercial Spaces"
+    "headline": "EvoEco Partners with Ygnacio Center to Elevate Sustainability in Commercial Spaces",
+    "logo": null,
+    "initials": "YC",
+    "logoTile": null
   },
   {
     "slug": "culver-city-hall",
@@ -81,7 +96,10 @@
     "sector": "Municipal government",
     "announced": "2023-07-07",
     "post": "https://evoeco.substack.com/p/evoeco-partners-with-culver-city",
-    "headline": "EvoEco Partners with Culver City Hall to Lead the Way in Sustainable Municipal Waste Management"
+    "headline": "EvoEco Partners with Culver City Hall to Lead the Way in Sustainable Municipal Waste Management",
+    "logo": "culver-city-hall.png",
+    "initials": "CCH",
+    "logoTile": "light"
   },
   {
     "slug": "ucsf-san-francisco",
@@ -95,7 +113,10 @@
     "sector": "Research & higher education",
     "announced": "2023-08-01",
     "post": "https://evoeco.substack.com/p/evoeco-and-ucsf-join-forces-to-revolutionize",
-    "headline": "EvoEco and UCSF Join Forces to Revolutionize Evolutionary Ecology Research"
+    "headline": "EvoEco and UCSF Join Forces to Revolutionize Evolutionary Ecology Research",
+    "logo": "ucsf-san-francisco.png",
+    "initials": "UCSF",
+    "logoTile": "light"
   },
   {
     "slug": "san-francisco-public-library",
@@ -109,7 +130,10 @@
     "sector": "Public institutions",
     "announced": "2023-08-02",
     "post": "https://evoeco.substack.com/p/evoeco-partners-with-san-francisco",
-    "headline": "EvoEco Partners with San Francisco Public Library for a Sustainable Future"
+    "headline": "EvoEco Partners with San Francisco Public Library for a Sustainable Future",
+    "logo": "san-francisco-public-library.png",
+    "initials": "SFP",
+    "logoTile": "light"
   },
   {
     "slug": "google-playa-vista",
@@ -123,7 +147,10 @@
     "sector": "Technology",
     "announced": "2023-08-08",
     "post": "https://evoeco.substack.com/p/evoeco-launches-at-googles-playa",
-    "headline": "EvoEco Launches at Google's Playa Vista Office: A New Era of Sustainable Innovation"
+    "headline": "EvoEco Launches at Google's Playa Vista Office: A New Era of Sustainable Innovation",
+    "logo": "google-playa-vista.png",
+    "initials": "G",
+    "logoTile": "light"
   },
   {
     "slug": "novo-nordisk-clayton",
@@ -137,7 +164,10 @@
     "sector": "Pharmaceutical manufacturing",
     "announced": "2023-08-23",
     "post": "https://evoeco.substack.com/p/evoeco-partners-with-novo-nordisk",
-    "headline": "EvoEco Partners with Novo Nordisk in Clayton, North Carolina to Advance Sustainable Pharma Manufacturing"
+    "headline": "EvoEco Partners with Novo Nordisk in Clayton, North Carolina to Advance Sustainable Pharma Manufacturing",
+    "logo": "novo-nordisk-clayton.png",
+    "initials": "NN",
+    "logoTile": "light"
   },
   {
     "slug": "columbia-property-trust-san-francisco",
@@ -151,7 +181,10 @@
     "sector": "Commercial real estate",
     "announced": "2023-09-08",
     "post": "https://evoeco.substack.com/p/evoeco-partners-with-columbia-property",
-    "headline": "EvoEco Partners with Columbia Property Trust to Transform Waste Management in San Francisco"
+    "headline": "EvoEco Partners with Columbia Property Trust to Transform Waste Management in San Francisco",
+    "logo": null,
+    "initials": "CPT",
+    "logoTile": null
   },
   {
     "slug": "uw-bothell",
@@ -165,7 +198,10 @@
     "sector": "Higher education",
     "announced": "2023-10-20",
     "post": "https://evoeco.substack.com/p/evoeco-partners-with-university-of",
-    "headline": "EvoEco Partners with University of Washington Bothell to Drive Campus Sustainability"
+    "headline": "EvoEco Partners with University of Washington Bothell to Drive Campus Sustainability",
+    "logo": "uw-bothell.png",
+    "initials": "UWB",
+    "logoTile": "light"
   },
   {
     "slug": "mastercard-san-francisco",
@@ -179,7 +215,10 @@
     "sector": "Financial services",
     "announced": "2023-11-24",
     "post": "https://evoeco.substack.com/p/evoeco-teams-up-with-mastercard-in",
-    "headline": "EvoEco Teams Up with Mastercard in San Francisco to Revolutionize Waste Management"
+    "headline": "EvoEco Teams Up with Mastercard in San Francisco to Revolutionize Waste Management",
+    "logo": "mastercard-san-francisco.png",
+    "initials": "M",
+    "logoTile": "light"
   },
   {
     "slug": "fremont-event-center",
@@ -193,7 +232,10 @@
     "sector": "Municipal government",
     "announced": "2023-12-01",
     "post": "https://evoeco.substack.com/p/evoeco-partners-with-the-city-of",
-    "headline": "EvoEco Partners with the City of Fremont's Event Center to Revolutionize Waste Management"
+    "headline": "EvoEco Partners with the City of Fremont's Event Center to Revolutionize Waste Management",
+    "logo": null,
+    "initials": "CF",
+    "logoTile": null
   },
   {
     "slug": "idaho-national-laboratory",
@@ -207,7 +249,10 @@
     "sector": "Energy research",
     "announced": "2023-12-03",
     "post": "https://evoeco.substack.com/p/evoeco-partners-with-idaho-national",
-    "headline": "EvoEco Partners with Idaho National Laboratory to Pioneer Sustainable Energy Solutions"
+    "headline": "EvoEco Partners with Idaho National Laboratory to Pioneer Sustainable Energy Solutions",
+    "logo": "idaho-national-laboratory.png",
+    "initials": "INL",
+    "logoTile": "dark"
   },
   {
     "slug": "dorsett-hotels-singapore",
@@ -221,7 +266,10 @@
     "sector": "Hospitality",
     "announced": "2024-01-20",
     "post": "https://evoeco.substack.com/p/evoeco-partners-with-dorsett-hotels",
-    "headline": "EvoEco Partners with Dorsett Hotels Singapore to Elevate Sustainable Hospitality"
+    "headline": "EvoEco Partners with Dorsett Hotels Singapore to Elevate Sustainable Hospitality",
+    "logo": "dorsett-hotels-singapore.png",
+    "initials": "DH",
+    "logoTile": "light"
   },
   {
     "slug": "marina-bay-sands-singapore",
@@ -235,7 +283,10 @@
     "sector": "Events & conventions",
     "announced": "2024-03-29",
     "post": "https://evoeco.substack.com/p/evoeco-partners-with-marina-bay-sands",
-    "headline": "EvoEco Partners with Marina Bay Sands MICE Convention Center to Lead Sustainable Events in Singapore"
+    "headline": "EvoEco Partners with Marina Bay Sands MICE Convention Center to Lead Sustainable Events in Singapore",
+    "logo": "marina-bay-sands-singapore.png",
+    "initials": "MBS",
+    "logoTile": "light"
   },
   {
     "slug": "vuori-carlsbad",
@@ -249,7 +300,10 @@
     "sector": "Apparel & retail",
     "announced": null,
     "post": null,
-    "headline": "EvoEco brings smart waste data to Vuori's Carlsbad headquarters."
+    "headline": "EvoEco brings smart waste data to Vuori's Carlsbad headquarters.",
+    "logo": "vuori-carlsbad.png",
+    "initials": "V",
+    "logoTile": "light"
   },
   {
     "slug": "zscaler-san-jose",
@@ -263,7 +317,10 @@
     "sector": "Cloud security",
     "announced": null,
     "post": null,
-    "headline": "EvoEco brings smart waste data to Zscaler's San Jose headquarters."
+    "headline": "EvoEco brings smart waste data to Zscaler's San Jose headquarters.",
+    "logo": "zscaler-san-jose.png",
+    "initials": "Z",
+    "logoTile": "light"
   },
   {
     "slug": "wci-berkeley",
@@ -277,7 +334,10 @@
     "sector": "Not specified",
     "announced": null,
     "post": null,
-    "headline": "EvoEco brings smart waste data to WCI in Berkeley."
+    "headline": "EvoEco brings smart waste data to WCI in Berkeley.",
+    "logo": null,
+    "initials": "WCI",
+    "logoTile": null
   },
   {
     "slug": "capgemini-toronto",
@@ -291,7 +351,10 @@
     "sector": "Consulting & technology services",
     "announced": null,
     "post": null,
-    "headline": "EvoEco brings smart waste data to Capgemini's Toronto office."
+    "headline": "EvoEco brings smart waste data to Capgemini's Toronto office.",
+    "logo": "capgemini-toronto.png",
+    "initials": "C",
+    "logoTile": "light"
   },
   {
     "slug": "architect-of-the-capitol-washington-dc",
@@ -305,7 +368,10 @@
     "sector": "Federal government",
     "announced": null,
     "post": null,
-    "headline": "EvoEco brings smart waste data to the Architect of the Capitol in Washington, DC."
+    "headline": "EvoEco brings smart waste data to the Architect of the Capitol in Washington, DC.",
+    "logo": "architect-of-the-capitol-washington-dc.png",
+    "initials": "AC",
+    "logoTile": "light"
   },
   {
     "slug": "university-of-washington-seattle",
@@ -319,7 +385,10 @@
     "sector": "Higher education",
     "announced": null,
     "post": null,
-    "headline": "EvoEco brings smart waste data to the University of Washington's Seattle campus."
+    "headline": "EvoEco brings smart waste data to the University of Washington's Seattle campus.",
+    "logo": "university-of-washington-seattle.png",
+    "initials": "UW",
+    "logoTile": "light"
   },
   {
     "slug": "jll-chicago",
@@ -333,7 +402,10 @@
     "sector": "Commercial real estate",
     "announced": null,
     "post": null,
-    "headline": "EvoEco brings smart waste data to JLL's global headquarters in Chicago."
+    "headline": "EvoEco brings smart waste data to JLL's global headquarters in Chicago.",
+    "logo": "jll-chicago.png",
+    "initials": "JLL",
+    "logoTile": "light"
   },
   {
     "slug": "cbre-dallas",
@@ -347,7 +419,10 @@
     "sector": "Commercial real estate",
     "announced": null,
     "post": null,
-    "headline": "EvoEco brings smart waste data to CBRE's global headquarters in Dallas."
+    "headline": "EvoEco brings smart waste data to CBRE's global headquarters in Dallas.",
+    "logo": "cbre-dallas.png",
+    "initials": "CBRE",
+    "logoTile": "light"
   },
   {
     "slug": "university-of-tasmania-hobart",
@@ -361,7 +436,10 @@
     "sector": "Higher education",
     "announced": null,
     "post": null,
-    "headline": "EvoEco brings smart waste data to the University of Tasmania in Hobart."
+    "headline": "EvoEco brings smart waste data to the University of Tasmania in Hobart.",
+    "logo": "university-of-tasmania-hobart.png",
+    "initials": "UT",
+    "logoTile": "light"
   },
   {
     "slug": "concordia-university-montreal",
@@ -375,6 +453,9 @@
     "sector": "Higher education",
     "announced": null,
     "post": null,
-    "headline": "EvoEco brings smart waste data to Concordia University in Montreal."
+    "headline": "EvoEco brings smart waste data to Concordia University in Montreal.",
+    "logo": "concordia-university-montreal.png",
+    "initials": "CU",
+    "logoTile": "light"
   }
 ]

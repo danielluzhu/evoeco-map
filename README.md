@@ -24,6 +24,7 @@ pages are static and work from the filesystem, no build step or server needed.
 | `assets/locations.js` | `data/locations.json` as a script for `file://` use    |
 | `assets/map.js`       | Renderer shared by every page                          |
 | `assets/map.css`      | Shared styles                                          |
+| `assets/logos/`       | Customer logos, 128px PNG, one per slug                 |
 
 ## Map geometry
 
@@ -36,3 +37,21 @@ registered to the coastlines.
 
 Coordinates are approximate site centroids, good to roughly the campus or
 building, not survey grade.
+
+## Logos
+
+Each customer's mark is fetched once from that organisation's own site (or its
+favicon service) and committed as a 128px PNG under `assets/logos/`, trimmed of
+transparent padding so it fills its tile. Nothing is hotlinked, so the pages
+make no third-party requests.
+
+Marks sit on a light tile because many are dark-on-transparent and would
+otherwise vanish against the dark card. A logo that is *sparse white ink* would
+have the opposite problem, so those get a dark tile instead — detected by
+measuring the near-white fraction of the opaque pixels rather than by hand.
+
+Four customers have no logo: Ygnacio Center, Columbia Property Trust and WCI
+have no live site, and the City of Fremont publishes only a 16px favicon, too
+small to use. Those fall back to a CSS monogram of the customer's initials.
+
+The logos are third-party trademarks, reproduced to identify each customer.
