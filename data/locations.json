@@ -278,5 +278,19 @@
     "announced": null,
     "post": null,
     "headline": "EvoEco brings smart waste data to WCI in Berkeley."
+  },
+  {
+    "slug": "capgemini-toronto",
+    "customer": "Capgemini",
+    "site": "Capgemini Toronto office",
+    "city": "Toronto",
+    "region": "Ontario",
+    "country": "Canada",
+    "lat": 43.6469,
+    "lon": -79.3806,
+    "sector": "Consulting & technology services",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to Capgemini's Toronto office."
   }
 ]

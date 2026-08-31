@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Capgemini — Toronto, Canada | EvoEco global map</title>
+<meta name="description" content="Global map of the EvoEco deployment at Capgemini, Toronto, Canada.">
+<link rel="stylesheet" href="../assets/map.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">EvoEco deployment &middot; Consulting &amp; technology services</p>
+  <h1>Capgemini</h1>
+  <p class="sub">EvoEco brings smart waste data to Capgemini&#x27;s Toronto office.</p>
+
+  <div class="mapcard" id="map"></div>
+
+  <dl class="facts">
+    <div class="fact"><dt>Site</dt><dd>Capgemini Toronto office</dd></div>
+    <div class="fact"><dt>City</dt><dd>Toronto</dd></div>
+    <div class="fact"><dt>Region</dt><dd>Ontario</dd></div>
+    <div class="fact"><dt>Country</dt><dd>Canada</dd></div>
+    <div class="fact"><dt>Coordinates</dt><dd class="mono">43°38'48.8"N 79°22'50.2"W</dd></div>
+  </dl>
+
+  <p class="foot">
+    <a href="../index.html">All locations</a>
+  </p>
+</div>
+
+<script src="../assets/world.js"></script>
+<script src="../assets/locations.js"></script>
+<script src="../assets/map.js"></script>
+<script>
+  var slug = "capgemini-toronto";
+  var focus = window.LOCATIONS.filter(function (l) { return l.slug === slug; })[0];
+  window.renderMap(document.getElementById('map'), focus, window.LOCATIONS);
+</script>
+</body>
+</html>
