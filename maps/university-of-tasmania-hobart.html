@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>University of Tasmania — Hobart, Australia | EvoEco global map</title>
+<meta name="description" content="Global map of the EvoEco deployment at University of Tasmania, Hobart, Australia.">
+<link rel="stylesheet" href="../assets/map.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">EvoEco deployment &middot; Higher education</p>
+  <h1>University of Tasmania</h1>
+  <p class="sub">EvoEco brings smart waste data to the University of Tasmania in Hobart.</p>
+
+  <div class="mapcard" id="map"></div>
+
+  <dl class="facts">
+    <div class="fact"><dt>Site</dt><dd>Sandy Bay campus, Hobart</dd></div>
+    <div class="fact"><dt>City</dt><dd>Hobart</dd></div>
+    <div class="fact"><dt>Region</dt><dd>Tasmania</dd></div>
+    <div class="fact"><dt>Country</dt><dd>Australia</dd></div>
+    <div class="fact"><dt>Coordinates</dt><dd class="mono">42°54'10.1"S 147°19'37.9"E</dd></div>
+  </dl>
+
+  <p class="foot">
+    <a href="../index.html">All locations</a>
+  </p>
+</div>
+
+<script src="../assets/world.js"></script>
+<script src="../assets/locations.js"></script>
+<script src="../assets/map.js"></script>
+<script>
+  var slug = "university-of-tasmania-hobart";
+  var focus = window.LOCATIONS.filter(function (l) { return l.slug === slug; })[0];
+  window.renderMap(document.getElementById('map'), focus, window.LOCATIONS);
+</script>
+</body>
+</html>

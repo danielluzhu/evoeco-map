@@ -348,5 +348,19 @@
     "announced": null,
     "post": null,
     "headline": "EvoEco brings smart waste data to CBRE's global headquarters in Dallas."
+  },
+  {
+    "slug": "university-of-tasmania-hobart",
+    "customer": "University of Tasmania",
+    "site": "Sandy Bay campus, Hobart",
+    "city": "Hobart",
+    "region": "Tasmania",
+    "country": "Australia",
+    "lat": -42.9028,
+    "lon": 147.3272,
+    "sector": "Higher education",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to the University of Tasmania in Hobart."
   }
 ]
