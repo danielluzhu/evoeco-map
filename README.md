@@ -3,6 +3,8 @@
 A global map for every EvoEco customer location, built from the announcements
 published at [evoeco.substack.com](https://evoeco.substack.com).
 
+**Live site: <https://danielluzhu.github.io/evoeco-map/>**
+
 Each customer gets its own page under `maps/`: a whole-world equirectangular
 map with that site pinned and labelled, every other EvoEco site shown dimmed
 for context, and a fact panel with the site, region, coordinates, and
