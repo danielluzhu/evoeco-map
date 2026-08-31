@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Culver City Hall — Culver City, United States | EvoEco global map</title>
+<meta name="description" content="Global map of the EvoEco deployment at Culver City Hall, Culver City, United States.">
+<link rel="stylesheet" href="../assets/map.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">EvoEco deployment &middot; Municipal government</p>
+  <h1>Culver City Hall</h1>
+  <p class="sub">EvoEco Partners with Culver City Hall to Lead the Way in Sustainable Municipal Waste Management</p>
+
+  <div class="mapcard" id="map"></div>
+
+  <dl class="facts">
+    <div class="fact"><dt>Site</dt><dd>Culver City Hall</dd></div>
+    <div class="fact"><dt>City</dt><dd>Culver City</dd></div>
+    <div class="fact"><dt>Region</dt><dd>California</dd></div>
+    <div class="fact"><dt>Country</dt><dd>United States</dd></div>
+    <div class="fact"><dt>Coordinates</dt><dd class="mono">34°1'18.8"N 118°23'47.4"W</dd></div>
+    <div class="fact"><dt>Announced</dt><dd>July 7, 2023</dd></div>
+  </dl>
+
+  <p class="foot">
+    <a href="https://evoeco.substack.com/p/evoeco-partners-with-culver-city">Read the announcement &rarr;</a>
+    <span class="sep">&middot;</span>
+    <a href="../index.html">All locations</a>
+  </p>
+</div>
+
+<script src="../assets/world.js"></script>
+<script src="../assets/locations.js"></script>
+<script src="../assets/map.js"></script>
+<script>
+  var slug = "culver-city-hall";
+  var focus = window.LOCATIONS.filter(function (l) { return l.slug === slug; })[0];
+  window.renderMap(document.getElementById('map'), focus, window.LOCATIONS);
+</script>
+</body>
+</html>
