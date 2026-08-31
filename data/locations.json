@@ -236,5 +236,19 @@
     "announced": "2024-03-29",
     "post": "https://evoeco.substack.com/p/evoeco-partners-with-marina-bay-sands",
     "headline": "EvoEco Partners with Marina Bay Sands MICE Convention Center to Lead Sustainable Events in Singapore"
+  },
+  {
+    "slug": "vuori-carlsbad",
+    "customer": "Vuori",
+    "site": "Vuori headquarters, 5600 Avenida Encinas",
+    "city": "Carlsbad",
+    "region": "California",
+    "country": "United States",
+    "lat": 33.1244,
+    "lon": -117.3254,
+    "sector": "Apparel & retail",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to Vuori's Carlsbad headquarters."
   }
 ]

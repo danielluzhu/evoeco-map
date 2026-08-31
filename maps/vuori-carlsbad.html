@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vuori — Carlsbad, United States | EvoEco global map</title>
+<meta name="description" content="Global map of the EvoEco deployment at Vuori, Carlsbad, United States.">
+<link rel="stylesheet" href="../assets/map.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">EvoEco deployment &middot; Apparel &amp; retail</p>
+  <h1>Vuori</h1>
+  <p class="sub">EvoEco brings smart waste data to Vuori&#x27;s Carlsbad headquarters.</p>
+
+  <div class="mapcard" id="map"></div>
+
+  <dl class="facts">
+    <div class="fact"><dt>Site</dt><dd>Vuori headquarters, 5600 Avenida Encinas</dd></div>
+    <div class="fact"><dt>City</dt><dd>Carlsbad</dd></div>
+    <div class="fact"><dt>Region</dt><dd>California</dd></div>
+    <div class="fact"><dt>Country</dt><dd>United States</dd></div>
+    <div class="fact"><dt>Coordinates</dt><dd class="mono">33°7'27.8"N 117°19'31.4"W</dd></div>
+  </dl>
+
+  <p class="foot">
+    <a href="../index.html">All locations</a>
+  </p>
+</div>
+
+<script src="../assets/world.js"></script>
+<script src="../assets/locations.js"></script>
+<script src="../assets/map.js"></script>
+<script>
+  var slug = "vuori-carlsbad";
+  var focus = window.LOCATIONS.filter(function (l) { return l.slug === slug; })[0];
+  window.renderMap(document.getElementById('map'), focus, window.LOCATIONS);
+</script>
+</body>
+</html>
