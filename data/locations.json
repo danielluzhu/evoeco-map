@@ -250,5 +250,19 @@
     "announced": null,
     "post": null,
     "headline": "EvoEco brings smart waste data to Vuori's Carlsbad headquarters."
+  },
+  {
+    "slug": "zscaler-san-jose",
+    "customer": "Zscaler",
+    "site": "Zscaler headquarters, 120 Holger Way",
+    "city": "San Jose",
+    "region": "California",
+    "country": "United States",
+    "lat": 37.4069,
+    "lon": -121.9447,
+    "sector": "Cloud security",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to Zscaler's San Jose headquarters."
   }
 ]
