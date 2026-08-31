@@ -45,19 +45,24 @@
     // Crosshair through the focus site.
     s += '<path class="crosshair" d="M0 ' + fy.toFixed(2) + 'H' + W + 'M' + fx.toFixed(2) + ' ' + VIEW.y + 'V' + (VIEW.y + VIEW.h) + '"/>';
 
-    // Every other site, dimmed for context.
+    // Every other site gets a full pin too, held back so the focus still leads.
     if (all) {
       for (var j = 0; j < all.length; j++) {
         if (all[j].slug === focus.slug) continue;
-        s += '<circle class="other-dot" cx="' + px(all[j].lon).toFixed(2) + '" cy="' + py(all[j].lat).toFixed(2) + '" r="2.1"><title>' +
-          esc(all[j].customer + ' — ' + all[j].city) + '</title></circle>';
+        var ox = px(all[j].lon).toFixed(2), oy = py(all[j].lat).toFixed(2);
+        s += '<g class="site-ctx">';
+        s += '<circle class="ctx-halo" cx="' + ox + '" cy="' + oy + '" r="6"/>';
+        s += '<circle class="ctx-pin" cx="' + ox + '" cy="' + oy + '" r="2.6"/>';
+        s += '<circle class="hit" cx="' + ox + '" cy="' + oy + '" r="9"><title>' +
+          esc(all[j].customer + ' — ' + all[j].city + ', ' + all[j].country) + '</title></circle>';
+        s += '</g>';
       }
     }
 
     // Focus marker.
     s += '<circle class="halo pulse" cx="' + fx.toFixed(2) + '" cy="' + fy.toFixed(2) + '" r="9"/>';
     s += '<circle class="halo" cx="' + fx.toFixed(2) + '" cy="' + fy.toFixed(2) + '" r="9"/>';
-    s += '<circle class="pin" cx="' + fx.toFixed(2) + '" cy="' + fy.toFixed(2) + '" r="3.6"/>';
+    s += '<circle class="pin focus-pin" cx="' + fx.toFixed(2) + '" cy="' + fy.toFixed(2) + '" r="4.2"/>';
 
     // Callout label, flipped to whichever side has room.
     var name = focus.customer, where = focus.city + ', ' + focus.country;
