@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CBRE — Dallas, United States | EvoEco global map</title>
+<meta name="description" content="Global map of the EvoEco deployment at CBRE, Dallas, United States.">
+<link rel="stylesheet" href="../assets/map.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">EvoEco deployment &middot; Commercial real estate</p>
+  <h1>CBRE</h1>
+  <p class="sub">EvoEco brings smart waste data to CBRE&#x27;s global headquarters in Dallas.</p>
+
+  <div class="mapcard" id="map"></div>
+
+  <dl class="facts">
+    <div class="fact"><dt>Site</dt><dd>CBRE global headquarters, 2121 N Pearl St</dd></div>
+    <div class="fact"><dt>City</dt><dd>Dallas</dd></div>
+    <div class="fact"><dt>Region</dt><dd>Texas</dd></div>
+    <div class="fact"><dt>Country</dt><dd>United States</dd></div>
+    <div class="fact"><dt>Coordinates</dt><dd class="mono">32°47'37.0"N 96°47'59.3"W</dd></div>
+  </dl>
+
+  <p class="foot">
+    <a href="../index.html">All locations</a>
+  </p>
+</div>
+
+<script src="../assets/world.js"></script>
+<script src="../assets/locations.js"></script>
+<script src="../assets/map.js"></script>
+<script>
+  var slug = "cbre-dallas";
+  var focus = window.LOCATIONS.filter(function (l) { return l.slug === slug; })[0];
+  window.renderMap(document.getElementById('map'), focus, window.LOCATIONS);
+</script>
+</body>
+</html>

@@ -334,5 +334,19 @@
     "announced": null,
     "post": null,
     "headline": "EvoEco brings smart waste data to JLL's global headquarters in Chicago."
+  },
+  {
+    "slug": "cbre-dallas",
+    "customer": "CBRE",
+    "site": "CBRE global headquarters, 2121 N Pearl St",
+    "city": "Dallas",
+    "region": "Texas",
+    "country": "United States",
+    "lat": 32.7936,
+    "lon": -96.7998,
+    "sector": "Commercial real estate",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to CBRE's global headquarters in Dallas."
   }
 ]
