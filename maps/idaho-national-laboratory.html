@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Idaho National Laboratory — Idaho Falls, United States | EvoEco global map</title>
+<meta name="description" content="Global map of the EvoEco deployment at Idaho National Laboratory, Idaho Falls, United States.">
+<link rel="stylesheet" href="../assets/map.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">EvoEco deployment &middot; Energy research</p>
+  <h1>Idaho National Laboratory</h1>
+  <p class="sub">EvoEco Partners with Idaho National Laboratory to Pioneer Sustainable Energy Solutions</p>
+
+  <div class="mapcard" id="map"></div>
+
+  <dl class="facts">
+    <div class="fact"><dt>Site</dt><dd>INL, Idaho Falls</dd></div>
+    <div class="fact"><dt>City</dt><dd>Idaho Falls</dd></div>
+    <div class="fact"><dt>Region</dt><dd>Idaho</dd></div>
+    <div class="fact"><dt>Country</dt><dd>United States</dd></div>
+    <div class="fact"><dt>Coordinates</dt><dd class="mono">43°31'14.5"N 112°2'10.3"W</dd></div>
+    <div class="fact"><dt>Announced</dt><dd>December 3, 2023</dd></div>
+  </dl>
+
+  <p class="foot">
+    <a href="https://evoeco.substack.com/p/evoeco-partners-with-idaho-national">Read the announcement &rarr;</a>
+    <span class="sep">&middot;</span>
+    <a href="../index.html">All locations</a>
+  </p>
+</div>
+
+<script src="../assets/world.js"></script>
+<script src="../assets/locations.js"></script>
+<script src="../assets/map.js"></script>
+<script>
+  var slug = "idaho-national-laboratory";
+  var focus = window.LOCATIONS.filter(function (l) { return l.slug === slug; })[0];
+  window.renderMap(document.getElementById('map'), focus, window.LOCATIONS);
+</script>
+</body>
+</html>
