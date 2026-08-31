@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dorsett Hotels — Singapore, Singapore | EvoEco global map</title>
+<meta name="description" content="Global map of the EvoEco deployment at Dorsett Hotels, Singapore, Singapore.">
+<link rel="stylesheet" href="../assets/map.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">EvoEco deployment &middot; Hospitality</p>
+  <h1>Dorsett Hotels</h1>
+  <p class="sub">EvoEco Partners with Dorsett Hotels Singapore to Elevate Sustainable Hospitality</p>
+
+  <div class="mapcard" id="map"></div>
+
+  <dl class="facts">
+    <div class="fact"><dt>Site</dt><dd>Dorsett Singapore, New Bridge Road</dd></div>
+    <div class="fact"><dt>City</dt><dd>Singapore</dd></div>
+    <div class="fact"><dt>Region</dt><dd>Central Region</dd></div>
+    <div class="fact"><dt>Country</dt><dd>Singapore</dd></div>
+    <div class="fact"><dt>Coordinates</dt><dd class="mono">1°17'1.0"N 103°50'28.3"E</dd></div>
+    <div class="fact"><dt>Announced</dt><dd>January 20, 2024</dd></div>
+  </dl>
+
+  <p class="foot">
+    <a href="https://evoeco.substack.com/p/evoeco-partners-with-dorsett-hotels">Read the announcement &rarr;</a>
+    <span class="sep">&middot;</span>
+    <a href="../index.html">All locations</a>
+  </p>
+</div>
+
+<script src="../assets/world.js"></script>
+<script src="../assets/locations.js"></script>
+<script src="../assets/map.js"></script>
+<script>
+  var slug = "dorsett-hotels-singapore";
+  var focus = window.LOCATIONS.filter(function (l) { return l.slug === slug; })[0];
+  window.renderMap(document.getElementById('map'), focus, window.LOCATIONS);
+</script>
+</body>
+</html>
