@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EvoEco customer locations — global map</title>
+<meta name="description" content="A global map for each of EvoEco's 17 announced customer locations.">
+<link rel="stylesheet" href="assets/map.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">EvoEco &middot; global footprint</p>
+  <h1>Customer locations</h1>
+  <p class="sub">Every deployment announced on
+    <a href="https://evoeco.substack.com">evoeco.substack.com</a>, mapped.
+    Click any marker or card for that location's own global map.</p>
+
+  <div class="mapcard" id="map"></div>
+
+  <dl class="facts">
+    <div class="fact"><dt>Locations</dt><dd>17</dd></div>
+    <div class="fact"><dt>Cities</dt><dd>13</dd></div>
+    <div class="fact"><dt>Countries</dt><dd>3</dd></div>
+    <div class="fact"><dt>Announced</dt><dd class="mono">Mar 7, 2023 – Mar 29, 2024</dd></div>
+  </dl>
+
+  <div class="grid">
+    <a class="card" href="maps/neom-the-line.html">
+      <div class="name">NEOM — The Line</div>
+      <div class="where">Tabuk Province, Saudi Arabia</div>
+      <div class="when">Mar 7, 2023</div>
+    </a>
+    <a class="card" href="maps/northrop-grumman-redondo-beach.html">
+      <div class="name">Northrop Grumman</div>
+      <div class="where">Redondo Beach, United States</div>
+      <div class="when">Mar 31, 2023</div>
+    </a>
+    <a class="card" href="maps/bmw-manufacturing-greer.html">
+      <div class="name">BMW Manufacturing</div>
+      <div class="where">Greer, United States</div>
+      <div class="when">May 26, 2023</div>
+    </a>
+    <a class="card" href="maps/javits-center-new-york.html">
+      <div class="name">Javits Center</div>
+      <div class="where">New York City, United States</div>
+      <div class="when">Jun 3, 2023</div>
+    </a>
+    <a class="card" href="maps/ygnacio-center-walnut-creek.html">
+      <div class="name">Ygnacio Center</div>
+      <div class="where">Walnut Creek, United States</div>
+      <div class="when">Jun 24, 2023</div>
+    </a>
+    <a class="card" href="maps/culver-city-hall.html">
+      <div class="name">Culver City Hall</div>
+      <div class="where">Culver City, United States</div>
+      <div class="when">Jul 7, 2023</div>
+    </a>
+    <a class="card" href="maps/ucsf-san-francisco.html">
+      <div class="name">UCSF</div>
+      <div class="where">San Francisco, United States</div>
+      <div class="when">Aug 1, 2023</div>
+    </a>
+    <a class="card" href="maps/san-francisco-public-library.html">
+      <div class="name">San Francisco Public Library</div>
+      <div class="where">San Francisco, United States</div>
+      <div class="when">Aug 2, 2023</div>
+    </a>
+    <a class="card" href="maps/google-playa-vista.html">
+      <div class="name">Google</div>
+      <div class="where">Los Angeles, United States</div>
+      <div class="when">Aug 8, 2023</div>
+    </a>
+    <a class="card" href="maps/novo-nordisk-clayton.html">
+      <div class="name">Novo Nordisk</div>
+      <div class="where">Clayton, United States</div>
+      <div class="when">Aug 23, 2023</div>
+    </a>
+    <a class="card" href="maps/columbia-property-trust-san-francisco.html">
+      <div class="name">Columbia Property Trust</div>
+      <div class="where">San Francisco, United States</div>
+      <div class="when">Sep 8, 2023</div>
+    </a>
+    <a class="card" href="maps/uw-bothell.html">
+      <div class="name">University of Washington Bothell</div>
+      <div class="where">Bothell, United States</div>
+      <div class="when">Oct 20, 2023</div>
+    </a>
+    <a class="card" href="maps/mastercard-san-francisco.html">
+      <div class="name">Mastercard</div>
+      <div class="where">San Francisco, United States</div>
+      <div class="when">Nov 24, 2023</div>
+    </a>
+    <a class="card" href="maps/fremont-event-center.html">
+      <div class="name">City of Fremont</div>
+      <div class="where">Fremont, United States</div>
+      <div class="when">Dec 1, 2023</div>
+    </a>
+    <a class="card" href="maps/idaho-national-laboratory.html">
+      <div class="name">Idaho National Laboratory</div>
+      <div class="where">Idaho Falls, United States</div>
+      <div class="when">Dec 3, 2023</div>
+    </a>
+    <a class="card" href="maps/dorsett-hotels-singapore.html">
+      <div class="name">Dorsett Hotels</div>
+      <div class="where">Singapore, Singapore</div>
+      <div class="when">Jan 20, 2024</div>
+    </a>
+    <a class="card" href="maps/marina-bay-sands-singapore.html">
+      <div class="name">Marina Bay Sands</div>
+      <div class="where">Singapore, Singapore</div>
+      <div class="when">Mar 29, 2024</div>
+    </a>
+  </div>
+</div>
+
+<script src="assets/world.js"></script>
+<script src="assets/locations.js"></script>
+<script src="assets/map.js"></script>
+<script>window.renderOverview(document.getElementById('map'), window.LOCATIONS);</script>
+</body>
+</html>

@@ -75,4 +75,24 @@
     s += '</svg>';
     el.innerHTML = s;
   };
+
+  window.renderOverview = function (el, all) {
+    var s = '<svg viewBox="' + VIEW.x + ' ' + VIEW.y + ' ' + VIEW.w + ' ' + VIEW.h + '" role="img" ' +
+      'aria-label="World map of all ' + all.length + ' EvoEco customer locations">';
+    s += graticule();
+    var c = window.WORLD.countries;
+    for (var i = 0; i < c.length; i++) {
+      s += '<path class="country" d="' + c[i].d + '"><title>' + esc(c[i].name) + '</title></path>';
+    }
+    for (var j = 0; j < all.length; j++) {
+      var x = px(all[j].lon).toFixed(2), y = py(all[j].lat).toFixed(2);
+      s += '<a href="maps/' + esc(all[j].slug) + '.html">';
+      s += '<circle class="halo" cx="' + x + '" cy="' + y + '" r="7"/>';
+      s += '<circle class="pin" cx="' + x + '" cy="' + y + '" r="3.2"><title>' +
+        esc(all[j].customer + ' — ' + all[j].city + ', ' + all[j].country) + '</title></circle>';
+      s += '</a>';
+    }
+    s += '</svg>';
+    el.innerHTML = s;
+  };
 })();
