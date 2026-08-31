@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BMW Manufacturing — Greer, United States | EvoEco global map</title>
+<meta name="description" content="Global map of the EvoEco deployment at BMW Manufacturing, Greer, United States.">
+<link rel="stylesheet" href="../assets/map.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">EvoEco deployment &middot; Automotive manufacturing</p>
+  <h1>BMW Manufacturing</h1>
+  <p class="sub">EvoEco Partners with BMW Manufacturing in Greer, South Carolina to Drive Sustainability Forward</p>
+
+  <div class="mapcard" id="map"></div>
+
+  <dl class="facts">
+    <div class="fact"><dt>Site</dt><dd>Plant Spartanburg</dd></div>
+    <div class="fact"><dt>City</dt><dd>Greer</dd></div>
+    <div class="fact"><dt>Region</dt><dd>South Carolina</dd></div>
+    <div class="fact"><dt>Country</dt><dd>United States</dd></div>
+    <div class="fact"><dt>Coordinates</dt><dd class="mono">34°57'9.4"N 82°13'39.4"W</dd></div>
+    <div class="fact"><dt>Announced</dt><dd>May 26, 2023</dd></div>
+  </dl>
+
+  <p class="foot">
+    <a href="https://evoeco.substack.com/p/evoeco-partners-with-bmw-manufacturing">Read the announcement &rarr;</a>
+    <span class="sep">&middot;</span>
+    <a href="../index.html">All locations</a>
+  </p>
+</div>
+
+<script src="../assets/world.js"></script>
+<script src="../assets/locations.js"></script>
+<script src="../assets/map.js"></script>
+<script>
+  var slug = "bmw-manufacturing-greer";
+  var focus = window.LOCATIONS.filter(function (l) { return l.slug === slug; })[0];
+  window.renderMap(document.getElementById('map'), focus, window.LOCATIONS);
+</script>
+</body>
+</html>
