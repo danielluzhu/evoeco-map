@@ -264,5 +264,19 @@
     "announced": null,
     "post": null,
     "headline": "EvoEco brings smart waste data to Zscaler's San Jose headquarters."
+  },
+  {
+    "slug": "wci-berkeley",
+    "customer": "WCI",
+    "site": "WCI, Berkeley",
+    "city": "Berkeley",
+    "region": "California",
+    "country": "United States",
+    "lat": 37.8715,
+    "lon": -122.273,
+    "sector": "Not specified",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to WCI in Berkeley."
   }
 ]
