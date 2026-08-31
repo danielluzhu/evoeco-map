@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>University of Washington Bothell — Bothell, United States | EvoEco global map</title>
+<meta name="description" content="Global map of the EvoEco deployment at University of Washington Bothell, Bothell, United States.">
+<link rel="stylesheet" href="../assets/map.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">EvoEco deployment &middot; Higher education</p>
+  <h1>University of Washington Bothell</h1>
+  <p class="sub">EvoEco Partners with University of Washington Bothell to Drive Campus Sustainability</p>
+
+  <div class="mapcard" id="map"></div>
+
+  <dl class="facts">
+    <div class="fact"><dt>Site</dt><dd>UW Bothell campus</dd></div>
+    <div class="fact"><dt>City</dt><dd>Bothell</dd></div>
+    <div class="fact"><dt>Region</dt><dd>Washington</dd></div>
+    <div class="fact"><dt>Country</dt><dd>United States</dd></div>
+    <div class="fact"><dt>Coordinates</dt><dd class="mono">47°45'34.6"N 122°11'30.5"W</dd></div>
+    <div class="fact"><dt>Announced</dt><dd>October 20, 2023</dd></div>
+  </dl>
+
+  <p class="foot">
+    <a href="https://evoeco.substack.com/p/evoeco-partners-with-university-of">Read the announcement &rarr;</a>
+    <span class="sep">&middot;</span>
+    <a href="../index.html">All locations</a>
+  </p>
+</div>
+
+<script src="../assets/world.js"></script>
+<script src="../assets/locations.js"></script>
+<script src="../assets/map.js"></script>
+<script>
+  var slug = "uw-bothell";
+  var focus = window.LOCATIONS.filter(function (l) { return l.slug === slug; })[0];
+  window.renderMap(document.getElementById('map'), focus, window.LOCATIONS);
+</script>
+</body>
+</html>
