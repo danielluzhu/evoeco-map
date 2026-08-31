@@ -76,23 +76,66 @@
     el.innerHTML = s;
   };
 
-  window.renderOverview = function (el, all) {
-    var s = '<svg viewBox="' + VIEW.x + ' ' + VIEW.y + ' ' + VIEW.w + ' ' + VIEW.h + '" role="img" ' +
+  window.renderOverview = function (el, all, opts) {
+    opts = opts || {};
+    var s = '<svg viewBox="' + VIEW.x + ' ' + VIEW.y + ' ' + VIEW.w + ' ' + VIEW.h + '" ' +
       'aria-label="World map of all ' + all.length + ' EvoEco customer locations">';
+    // Backdrop spans the viewBox so clicks on empty ocean reach the reset handler.
+    s += '<rect class="map-bg" x="' + VIEW.x + '" y="' + VIEW.y + '" width="' + VIEW.w + '" height="' + VIEW.h + '"/>';
     s += graticule();
     var c = window.WORLD.countries;
     for (var i = 0; i < c.length; i++) {
       s += '<path class="country" d="' + c[i].d + '"><title>' + esc(c[i].name) + '</title></path>';
     }
     for (var j = 0; j < all.length; j++) {
-      var x = px(all[j].lon).toFixed(2), y = py(all[j].lat).toFixed(2);
-      s += '<a href="maps/' + esc(all[j].slug) + '.html">';
+      var loc = all[j], x = px(loc.lon).toFixed(2), y = py(loc.lat).toFixed(2);
+      var label = esc(loc.customer + ' — ' + loc.city + ', ' + loc.country);
+      s += '<g class="site" data-slug="' + esc(loc.slug) + '" role="button" tabindex="0" aria-label="' + label + '">';
       s += '<circle class="halo" cx="' + x + '" cy="' + y + '" r="7"/>';
-      s += '<circle class="pin" cx="' + x + '" cy="' + y + '" r="3.2"><title>' +
-        esc(all[j].customer + ' — ' + all[j].city + ', ' + all[j].country) + '</title></circle>';
-      s += '</a>';
+      s += '<circle class="pin" cx="' + x + '" cy="' + y + '" r="3.2"/>';
+      // Invisible, generously sized hit target — the drawn pin is too small to click reliably.
+      s += '<circle class="hit" cx="' + x + '" cy="' + y + '" r="11"><title>' + label + '</title></circle>';
+      s += '</g>';
     }
     s += '</svg>';
     el.innerHTML = s;
+
+    var svg = el.querySelector('svg');
+    var groups = el.querySelectorAll('.site');
+    var selected = null;
+
+    function apply(slug) {
+      selected = slug;
+      el.classList.toggle('has-selection', !!slug);
+      for (var k = 0; k < groups.length; k++) {
+        groups[k].classList.toggle('is-selected', groups[k].getAttribute('data-slug') === slug);
+      }
+      if (opts.onChange) {
+        opts.onChange(slug ? all.filter(function (l) { return l.slug === slug; })[0] : null);
+      }
+    }
+
+    function select(slug) { apply(slug); }
+    function reset() { if (selected !== null) apply(null); }
+
+    for (var m = 0; m < groups.length; m++) {
+      (function (g) {
+        var slug = g.getAttribute('data-slug');
+        g.addEventListener('click', function (ev) {
+          // Keep the click from reaching the svg-level reset handler below.
+          ev.stopPropagation();
+          select(slug);
+        });
+        g.addEventListener('keydown', function (ev) {
+          if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); select(slug); }
+        });
+      })(groups[m]);
+    }
+
+    // Clicking any other part of the map — ocean, land, graticule — clears the selection.
+    svg.addEventListener('click', reset);
+    document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') reset(); });
+
+    return { select: select, reset: reset, selected: function () { return selected; } };
   };
 })();
