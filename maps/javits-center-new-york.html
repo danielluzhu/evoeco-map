@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Javits Center — New York City, United States | EvoEco global map</title>
+<meta name="description" content="Global map of the EvoEco deployment at Javits Center, New York City, United States.">
+<link rel="stylesheet" href="../assets/map.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">EvoEco deployment &middot; Events &amp; conventions</p>
+  <h1>Javits Center</h1>
+  <p class="sub">EvoEco Partners with Javits Center to Bring Sustainability to NYC&#x27;s Premier Event Space</p>
+
+  <div class="mapcard" id="map"></div>
+
+  <dl class="facts">
+    <div class="fact"><dt>Site</dt><dd>Jacob K. Javits Convention Center</dd></div>
+    <div class="fact"><dt>City</dt><dd>New York City</dd></div>
+    <div class="fact"><dt>Region</dt><dd>New York</dd></div>
+    <div class="fact"><dt>Country</dt><dd>United States</dd></div>
+    <div class="fact"><dt>Coordinates</dt><dd class="mono">40°45'27.7"N 74°0'9.7"W</dd></div>
+    <div class="fact"><dt>Announced</dt><dd>June 3, 2023</dd></div>
+  </dl>
+
+  <p class="foot">
+    <a href="https://evoeco.substack.com/p/evoeco-partners-with-javits-center">Read the announcement &rarr;</a>
+    <span class="sep">&middot;</span>
+    <a href="../index.html">All locations</a>
+  </p>
+</div>
+
+<script src="../assets/world.js"></script>
+<script src="../assets/locations.js"></script>
+<script src="../assets/map.js"></script>
+<script>
+  var slug = "javits-center-new-york";
+  var focus = window.LOCATIONS.filter(function (l) { return l.slug === slug; })[0];
+  window.renderMap(document.getElementById('map'), focus, window.LOCATIONS);
+</script>
+</body>
+</html>
