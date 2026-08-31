@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Concordia University — Montreal, Canada | EvoEco global map</title>
+<meta name="description" content="Global map of the EvoEco deployment at Concordia University, Montreal, Canada.">
+<link rel="stylesheet" href="../assets/map.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">EvoEco deployment &middot; Higher education</p>
+  <h1>Concordia University</h1>
+  <p class="sub">EvoEco brings smart waste data to Concordia University in Montreal.</p>
+
+  <div class="mapcard" id="map"></div>
+
+  <dl class="facts">
+    <div class="fact"><dt>Site</dt><dd>Sir George Williams campus, 1455 De Maisonneuve Blvd W</dd></div>
+    <div class="fact"><dt>City</dt><dd>Montreal</dd></div>
+    <div class="fact"><dt>Region</dt><dd>Quebec</dd></div>
+    <div class="fact"><dt>Country</dt><dd>Canada</dd></div>
+    <div class="fact"><dt>Coordinates</dt><dd class="mono">45°29'49.9"N 73°34'44.0"W</dd></div>
+  </dl>
+
+  <p class="foot">
+    <a href="../index.html">All locations</a>
+  </p>
+</div>
+
+<script src="../assets/world.js"></script>
+<script src="../assets/locations.js"></script>
+<script src="../assets/map.js"></script>
+<script>
+  var slug = "concordia-university-montreal";
+  var focus = window.LOCATIONS.filter(function (l) { return l.slug === slug; })[0];
+  window.renderMap(document.getElementById('map'), focus, window.LOCATIONS);
+</script>
+</body>
+</html>

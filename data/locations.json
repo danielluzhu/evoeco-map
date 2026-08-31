@@ -362,5 +362,19 @@
     "announced": null,
     "post": null,
     "headline": "EvoEco brings smart waste data to the University of Tasmania in Hobart."
+  },
+  {
+    "slug": "concordia-university-montreal",
+    "customer": "Concordia University",
+    "site": "Sir George Williams campus, 1455 De Maisonneuve Blvd W",
+    "city": "Montreal",
+    "region": "Quebec",
+    "country": "Canada",
+    "lat": 45.4972,
+    "lon": -73.5789,
+    "sector": "Higher education",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to Concordia University in Montreal."
   }
 ]
