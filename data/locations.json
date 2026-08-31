@@ -320,5 +320,19 @@
     "announced": null,
     "post": null,
     "headline": "EvoEco brings smart waste data to the University of Washington's Seattle campus."
+  },
+  {
+    "slug": "jll-chicago",
+    "customer": "JLL",
+    "site": "JLL global headquarters, 200 E Randolph St",
+    "city": "Chicago",
+    "region": "Illinois",
+    "country": "United States",
+    "lat": 41.8855,
+    "lon": -87.6215,
+    "sector": "Commercial real estate",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to JLL's global headquarters in Chicago."
   }
 ]
