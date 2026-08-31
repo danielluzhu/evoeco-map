@@ -292,5 +292,19 @@
     "announced": null,
     "post": null,
     "headline": "EvoEco brings smart waste data to Capgemini's Toronto office."
+  },
+  {
+    "slug": "architect-of-the-capitol-washington-dc",
+    "customer": "Architect of the Capitol",
+    "site": "U.S. Capitol complex",
+    "city": "Washington",
+    "region": "District of Columbia",
+    "country": "United States",
+    "lat": 38.8899,
+    "lon": -77.0091,
+    "sector": "Federal government",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to the Architect of the Capitol in Washington, DC."
   }
 ]
