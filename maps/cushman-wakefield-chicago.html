@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cushman &amp; Wakefield — Chicago, United States | EvoEco global map</title>
+<meta name="description" content="Global map of the EvoEco deployment at Cushman &amp; Wakefield, Chicago, United States.">
+<link rel="stylesheet" href="../assets/map.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">EvoEco deployment &middot; Commercial real estate</p>
+  <h1>Cushman &amp; Wakefield</h1>
+  <p class="sub">EvoEco brings smart waste data to Cushman &amp; Wakefield&#x27;s global headquarters in Chicago.</p>
+
+  <div class="mapcard" id="map"></div>
+
+  <dl class="facts">
+    <div class="fact"><dt>Site</dt><dd>Cushman &amp; Wakefield global headquarters, 225 W Wacker Dr</dd></div>
+    <div class="fact"><dt>City</dt><dd>Chicago</dd></div>
+    <div class="fact"><dt>Region</dt><dd>Illinois</dd></div>
+    <div class="fact"><dt>Country</dt><dd>United States</dd></div>
+    <div class="fact"><dt>Coordinates</dt><dd class="mono">41°53'11.8"N 87°38'7.8"W</dd></div>
+  </dl>
+
+  <p class="foot">
+    <a href="../index.html">All locations</a>
+  </p>
+</div>
+
+<script src="../assets/world.js"></script>
+<script src="../assets/locations.js"></script>
+<script src="../assets/map.js"></script>
+<script>
+  var slug = "cushman-wakefield-chicago";
+  var focus = window.LOCATIONS.filter(function (l) { return l.slug === slug; })[0];
+  window.renderMap(document.getElementById('map'), focus, window.LOCATIONS);
+</script>
+</body>
+</html>

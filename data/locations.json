@@ -457,5 +457,22 @@
     "logo": "concordia-university-montreal.png",
     "initials": "CU",
     "logoTile": "light"
+  },
+  {
+    "slug": "cushman-wakefield-chicago",
+    "customer": "Cushman & Wakefield",
+    "site": "Cushman & Wakefield global headquarters, 225 W Wacker Dr",
+    "city": "Chicago",
+    "region": "Illinois",
+    "country": "United States",
+    "lat": 41.8866,
+    "lon": -87.6355,
+    "sector": "Commercial real estate",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to Cushman & Wakefield's global headquarters in Chicago.",
+    "logo": "cushman-wakefield-chicago.png",
+    "initials": "CW",
+    "logoTile": "light"
   }
 ]
