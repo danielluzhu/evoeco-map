@@ -17,7 +17,6 @@
   <div class="mapcard" id="map"></div>
 
   <div class="detail" id="detail" role="region" aria-live="polite" aria-label="Selected location"></div>
-  <p class="hint" id="hint">Click a marker to select it. Click anywhere else on the map (or press Esc) to clear.</p>
 
   <dl class="facts">
     <div class="fact"><dt>Locations</dt><dd>38</dd></div>
@@ -340,9 +339,7 @@
 <script>
 (function () {
   var detail = document.getElementById('detail');
-  var hint = document.getElementById('hint');
   var cards = document.getElementById('cards').querySelectorAll('.card');
-  var IDLE = 'Click a marker to select it. Click anywhere else on the map (or press Esc) to clear.';
 
   function esc(s) {
     return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -360,7 +357,6 @@
     if (!loc) {
       detail.classList.remove('is-open');
       detail.innerHTML = '';
-      hint.textContent = IDLE;
       return;
     }
     var meta = esc(window.formatCoords(loc.lat, loc.lon)) + '  &middot;  ' + esc(loc.sector);
@@ -381,7 +377,6 @@
       '<div class="dmeta">' + meta + '</div>' +
       '<div class="dlinks">' + links + '</div>';
     detail.classList.add('is-open');
-    hint.textContent = 'Click anywhere else on the map (or press Esc) to clear the selection.';
     detail.querySelector('.dclose').addEventListener('click', function () { map.reset(); });
   }
 

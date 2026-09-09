@@ -176,8 +176,6 @@ a { color: var(--accent); }
 }
 .detail .dclose:hover { border-color: var(--accent); color: var(--ink); }
 
-.hint { color: var(--dim); font-size: 13px; margin: 12px 0 0; }
-
 .card.is-selected { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
 
 /* Leader from a nudged pin back to its true coordinate. */
