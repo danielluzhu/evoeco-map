@@ -25,6 +25,7 @@ pages are static and work from the filesystem, no build step or server needed.
 | `assets/map.js`       | Renderer shared by every page                          |
 | `assets/map.css`      | Shared styles                                          |
 | `assets/logos/`       | Customer logos, 128px PNG, one per slug                 |
+| `assets/evoeco/`      | EvoEco's own mark, and the favicons cut from it         |
 
 ## Map geometry
 
