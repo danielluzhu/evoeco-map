@@ -627,5 +627,22 @@
     "logo": "national-bank-of-canada-montreal.png",
     "initials": "NBC",
     "logoTile": "light"
+  },
+  {
+    "slug": "resorts-world-las-vegas",
+    "customer": "Resorts World Las Vegas",
+    "site": "Resorts World Las Vegas, 3000 S Las Vegas Blvd",
+    "city": "Las Vegas",
+    "region": "Nevada",
+    "country": "United States",
+    "lat": 36.1337,
+    "lon": -115.1662,
+    "sector": "Hospitality & gaming",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to Resorts World Las Vegas.",
+    "logo": "resorts-world-las-vegas.png",
+    "initials": "RW",
+    "logoTile": "light"
   }
 ]
