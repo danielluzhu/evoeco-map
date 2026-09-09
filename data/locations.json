@@ -474,5 +474,22 @@
     "logo": "cushman-wakefield-chicago.png",
     "initials": "CW",
     "logoTile": "light"
+  },
+  {
+    "slug": "humana-louisville",
+    "customer": "Humana",
+    "site": "Humana headquarters, 500 W Main St",
+    "city": "Louisville",
+    "region": "Kentucky",
+    "country": "United States",
+    "lat": 38.2566,
+    "lon": -85.7584,
+    "sector": "Health insurance",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to Humana's headquarters in Louisville.",
+    "logo": "humana-louisville.png",
+    "initials": "H",
+    "logoTile": "light"
   }
 ]
