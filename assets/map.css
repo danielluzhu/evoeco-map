@@ -30,7 +30,24 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.wrap { max-width: 1180px; margin: 0 auto; padding: 40px 24px 72px; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 32px 24px 72px; }
+
+/* --- Masthead ---------------------------------------------------------- */
+
+.masthead {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--line);
+}
+.brand { display: inline-flex; align-items: center; border-radius: 4px; }
+/* The supplied mark is near-black on transparent and disappears against this
+   background, so the masthead uses the knockout: letters reversed to white,
+   the V's greens untouched. */
+.brand img { height: 38px; width: auto; display: block; }
+.brand:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 
 .eyebrow {
   font-size: 12px;
