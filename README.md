@@ -26,6 +26,7 @@ pages are static and work from the filesystem, no build step or server needed.
 | `assets/map.css`      | Shared styles                                          |
 | `assets/logos/`       | Customer logos, 128px PNG, one per slug                 |
 | `assets/evoeco/`      | EvoEco's own mark, and the favicons cut from it         |
+| `assets/fonts/`       | Oswald 700, self-hosted, for headings                   |
 
 ## Map geometry
 
@@ -38,6 +39,23 @@ registered to the coastlines.
 
 Coordinates are approximate site centroids, good to roughly the campus or
 building, not survey grade.
+
+## Typography
+
+Headings are set in Oswald 700, picked by measuring the logo rather than by eye.
+The mark's cap-O is 0.624 as wide as it is tall and its stems are 0.202 of cap
+height; Oswald is 0.586 and 0.222, the closest fit on both counts among the
+open-licensed condensed grotesques tried (Anton, Archivo Black, Fjalla One,
+Barlow Condensed, Saira Condensed and others were wider of the mark on one axis
+or both).
+
+The font is committed under `assets/fonts/` rather than linked, so the pages
+still make no third-party requests. It is the 12KB latin subset, under the SIL
+Open Font License; the licence travels with it in `OFL.txt`.
+
+Body copy stays on the system sans. Oswald is a display face — it earns the
+headings and the overview's four figures, and would cost legibility everywhere
+else.
 
 ## Colours
 

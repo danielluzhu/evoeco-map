@@ -1,3 +1,16 @@
+/* Headings are set in Oswald, chosen by measuring the logo rather than by eye:
+   its cap-O is 0.586 wide for its height against the mark's 0.624, and its stems
+   are 0.222 of cap height against 0.202 — the closest fit on both counts of the
+   open-licensed condensed grotesques tried. Self-hosted, since the pages make no
+   third-party requests. Licence in assets/fonts/OFL.txt. */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/oswald-700.woff2) format('woff2');
+}
+
 /* EvoEco's palette: the two greens sampled straight out of the logo, and
    otherwise only black and white. Every neutral here is achromatic — the greens
    are the only hue on the page, which is what makes them read as the brand
@@ -63,10 +76,14 @@ body {
 }
 
 h1 {
-  font-size: clamp(28px, 4.4vw, 44px);
-  line-height: 1.1;
+  font-family: 'Oswald', ui-sans-serif, system-ui, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+  /* Oswald is condensed, so the same measure carries more characters — it can
+     take a larger size than the grotesque it replaces without running wider. */
+  font-size: clamp(30px, 4.8vw, 50px);
+  line-height: 1.08;
   margin: 0 0 10px;
-  letter-spacing: -0.025em;
+  letter-spacing: 0;
   text-wrap: balance;
 }
 
@@ -86,7 +103,7 @@ h1 + .mapcard, .titlebar + .mapcard { margin-top: 28px; }
   border-bottom: 1px solid var(--line);
 }
 .titlebar h1 { margin: 0; }
-.titlebar .brand img { height: clamp(40px, 5.6vw, 56px); }
+.titlebar .brand img { height: clamp(42px, 6.4vw, 66px); }
 @media (max-width: 480px) { .titlebar { gap: 13px; } }
 
 .mapcard {
@@ -144,7 +161,13 @@ h1 + .mapcard, .titlebar + .mapcard { margin-top: 28px; }
 .fact dd { margin: 0; font-size: 15px; font-weight: 600; }
 /* The overview's facts are four counts; set them as figures rather than as
    another line of body copy. The date range stays small — it is not a number. */
-.facts.stats dd { font-size: 30px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.05; }
+.facts.stats dd {
+  font-family: 'Oswald', ui-sans-serif, system-ui, sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.05;
+}
 .facts.stats dd.mono { font-size: 13px; font-weight: 500; letter-spacing: 0; line-height: 1.5; }
 .fact dd.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 500; font-size: 13px; }
 
