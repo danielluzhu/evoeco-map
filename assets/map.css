@@ -73,7 +73,21 @@ h1 {
 .sub { color: var(--muted); margin: 0 0 28px; max-width: 70ch; }
 /* The overview has no standfirst, so the map would otherwise ride up against
    the h1 — restore the gap the .sub used to hold open. */
-h1 + .mapcard { margin-top: 28px; }
+h1 + .mapcard, .titlebar + .mapcard { margin-top: 28px; }
+
+/* The overview's mark reads as part of the title, so the word "EvoEco" comes
+   out of the heading — the logo is already saying it. */
+.titlebar {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 22px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--line);
+}
+.titlebar h1 { margin: 0; }
+.titlebar .brand img { height: clamp(40px, 5.6vw, 56px); }
+@media (max-width: 480px) { .titlebar { gap: 13px; } }
 
 .mapcard {
   background:
