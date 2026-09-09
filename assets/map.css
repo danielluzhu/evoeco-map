@@ -43,6 +43,9 @@ body {
 h1 { font-size: clamp(26px, 4vw, 40px); line-height: 1.15; margin: 0 0 10px; letter-spacing: -0.02em; }
 
 .sub { color: var(--muted); margin: 0 0 28px; max-width: 70ch; }
+/* The overview has no standfirst, so the map would otherwise ride up against
+   the h1 — restore the gap the .sub used to hold open. */
+h1 + .mapcard { margin-top: 28px; }
 
 .mapcard {
   background: var(--panel);
