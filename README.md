@@ -39,6 +39,17 @@ registered to the coastlines.
 Coordinates are approximate site centroids, good to roughly the campus or
 building, not survey grade.
 
+## Colours
+
+The palette is EvoEco's own. Both greens are sampled straight out of the logo —
+`#36B350` from the lit face of its V, `#348B41` from the shaded one — and the
+logo's letter grey `#404041` is kept for ink on white. Everything else is
+achromatic black and white, so the greens are the only hue on the page.
+
+The bright green leads (pins, links, the eyebrow rule); the deeper one is for
+marks that support rather than lead — the crosshair, and the leader lines from
+a nudged pin back to its true coordinate.
+
 ## Logos
 
 Each customer's mark is fetched once from that organisation's own site (or its

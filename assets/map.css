@@ -1,14 +1,23 @@
+/* EvoEco's palette: the two greens sampled straight out of the logo, and
+   otherwise only black and white. Every neutral here is achromatic — the greens
+   are the only hue on the page, which is what makes them read as the brand
+   rather than as one accent among several. */
 :root {
-  --bg: #0b0f14;
-  --panel: #111820;
-  --line: #1e2a36;
-  --land: #1b2733;
-  --land-edge: #2b3b4b;
-  --ink: #e6edf3;
-  --muted: #8b9bab;
-  --dim: #5d6d7d;
-  --accent: #34d399;
-  --accent-soft: rgba(52, 211, 153, 0.16);
+  --bg: #0a0a0b;
+  --panel: #141415;
+  --line: #2a2a2c;
+  --land: #232326;
+  --land-edge: #3c3c40;
+  --ink: #ffffff;
+  --muted: #a8a8ac;
+  --dim: #7a7a7e;
+  /* The lit face of the logo's V. */
+  --accent: #36b350;
+  /* Its shaded face — the second green, for marks that support rather than lead. */
+  --accent-deep: #348b41;
+  /* The logo's own letter grey, kept for ink on white. */
+  --brand-ink: #404041;
+  --accent-soft: rgba(54, 179, 80, 0.16);
 }
 
 * { box-sizing: border-box; }
@@ -46,17 +55,17 @@ h1 { font-size: clamp(26px, 4vw, 40px); line-height: 1.15; margin: 0 0 10px; let
 .mapcard svg { display: block; width: 100%; height: auto; }
 
 .country { fill: var(--land); stroke: var(--land-edge); stroke-width: 0.4; vector-effect: non-scaling-stroke; }
-.graticule { stroke: #182430; stroke-width: 0.4; fill: none; vector-effect: non-scaling-stroke; }
-.crosshair { stroke: var(--accent); stroke-width: 0.6; stroke-dasharray: 3 4; opacity: 0.5; vector-effect: non-scaling-stroke; }
+.graticule { stroke: #1c1c1e; stroke-width: 0.4; fill: none; vector-effect: non-scaling-stroke; }
+.crosshair { stroke: var(--accent-deep); stroke-width: 0.6; stroke-dasharray: 3 4; opacity: 0.5; vector-effect: non-scaling-stroke; }
 .halo { fill: var(--accent-soft); }
 
 /* Detail pages draw every other site as a pin as well, muted so the focus leads. */
 .site-ctx { opacity: 0.42; }
-.ctx-halo { fill: rgba(52, 211, 153, 0.12); }
-.ctx-pin { fill: var(--accent); stroke: #06231a; stroke-width: 0.4; vector-effect: non-scaling-stroke; }
-.pin { fill: var(--accent); stroke: #06231a; stroke-width: 0.5; vector-effect: non-scaling-stroke; }
+.ctx-halo { fill: rgba(54, 179, 80, 0.12); }
+.ctx-pin { fill: var(--accent); stroke: var(--bg); stroke-width: 0.4; vector-effect: non-scaling-stroke; }
+.pin { fill: var(--accent); stroke: var(--bg); stroke-width: 0.5; vector-effect: non-scaling-stroke; }
 /* The focused site now shares its mark with 25 others — ring it so it still reads first. */
-.focus-pin { stroke: #eafff6; stroke-width: 1.2; }
+.focus-pin { stroke: var(--ink); stroke-width: 1.2; }
 
 .pulse { transform-box: fill-box; transform-origin: center; animation: pulse 2.6s ease-out infinite; }
 @keyframes pulse {
@@ -66,7 +75,7 @@ h1 { font-size: clamp(26px, 4vw, 40px); line-height: 1.15; margin: 0 0 10px; let
 }
 @media (prefers-reduced-motion: reduce) { .pulse { animation: none; opacity: 0.5; } }
 
-.label-box { fill: #0d141b; stroke: var(--accent); stroke-width: 0.5; vector-effect: non-scaling-stroke; }
+.label-box { fill: var(--panel); stroke: var(--accent); stroke-width: 0.5; vector-effect: non-scaling-stroke; }
 .label-text { fill: var(--ink); font-size: 11px; font-weight: 600; }
 .label-sub { fill: var(--muted); font-size: 9px; }
 
@@ -124,12 +133,12 @@ a { color: var(--accent); }
 .hit { fill: transparent; pointer-events: all; }
 .site:focus { outline: none; }
 .site:focus-visible .halo { stroke: var(--ink); stroke-width: 1.2; }
-.site:hover .halo { fill: rgba(52, 211, 153, 0.3); }
+.site:hover .halo { fill: rgba(54, 179, 80, 0.3); }
 
 /* Selecting one site fades the rest so the choice reads at a glance. */
 .mapcard.has-selection .site:not(.is-selected) { opacity: 0.28; }
-.site.is-selected .halo { fill: rgba(52, 211, 153, 0.38); }
-.site.is-selected .pin { stroke: #eafff6; stroke-width: 1.1; }
+.site.is-selected .halo { fill: rgba(54, 179, 80, 0.38); }
+.site.is-selected .pin { stroke: var(--ink); stroke-width: 1.1; }
 
 .detail {
   margin-top: 16px;
@@ -169,8 +178,8 @@ a { color: var(--accent); }
 .card.is-selected { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
 
 /* Leader from a nudged pin back to its true coordinate. */
-.leader { stroke: var(--accent); stroke-width: 0.55; opacity: 0.75; fill: none; vector-effect: non-scaling-stroke; }
-.anchor { fill: var(--accent); opacity: 0.75; }
+.leader { stroke: var(--accent-deep); stroke-width: 0.55; opacity: 0.75; fill: none; vector-effect: non-scaling-stroke; }
+.anchor { fill: var(--accent-deep); opacity: 0.75; }
 
 /* --- Customer logos ---------------------------------------------------- */
 
@@ -189,8 +198,8 @@ a { color: var(--accent); }
 }
 .logo img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; display: block; }
 .logo-mono {
-  background: #e9eef3;
-  color: #33404d;
+  background: #ededee;
+  color: var(--brand-ink);
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.01em;
@@ -206,4 +215,4 @@ a { color: var(--accent); }
 .detail .dhead .logo { width: 40px; height: 40px; }
 
 /* A logo that is sparse white ink would disappear on the light tile. */
-.logo-tile-dark { background: #10161d; }
+.logo-tile-dark { background: var(--panel); }
