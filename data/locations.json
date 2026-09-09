@@ -542,5 +542,22 @@
     "logo": "abm-new-york.png",
     "initials": "ABM",
     "logoTile": "light"
+  },
+  {
+    "slug": "pinterest-san-francisco",
+    "customer": "Pinterest",
+    "site": "Pinterest headquarters, 505 Brannan St",
+    "city": "San Francisco",
+    "region": "California",
+    "country": "United States",
+    "lat": 37.7776,
+    "lon": -122.3968,
+    "sector": "Technology",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to Pinterest's San Francisco headquarters.",
+    "logo": "pinterest-san-francisco.png",
+    "initials": "P",
+    "logoTile": "light"
   }
 ]
