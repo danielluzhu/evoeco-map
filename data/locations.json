@@ -593,5 +593,22 @@
     "logo": "mcdonalds-chicago.png",
     "initials": "M",
     "logoTile": "light"
+  },
+  {
+    "slug": "oracle-austin",
+    "customer": "Oracle",
+    "site": "Oracle global headquarters, 2300 Oracle Way",
+    "city": "Austin",
+    "region": "Texas",
+    "country": "United States",
+    "lat": 30.2435,
+    "lon": -97.7218,
+    "sector": "Enterprise software",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to Oracle's global headquarters in Austin.",
+    "logo": "oracle-austin.png",
+    "initials": "O",
+    "logoTile": "light"
   }
 ]

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oracle — Austin, United States | EvoEco global map</title>
+<meta name="description" content="Global map of the EvoEco deployment at Oracle, Austin, United States.">
+<link rel="icon" href="../assets/evoeco/favicon.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/evoeco/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/map.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">EvoEco deployment &middot; Enterprise software</p>
+  <h1>Oracle</h1>
+  <p class="sub">EvoEco brings smart waste data to Oracle&#x27;s global headquarters in Austin.</p>
+
+  <div class="mapcard" id="map"></div>
+
+  <dl class="facts">
+    <div class="fact"><dt>Site</dt><dd>Oracle global headquarters, 2300 Oracle Way</dd></div>
+    <div class="fact"><dt>City</dt><dd>Austin</dd></div>
+    <div class="fact"><dt>Region</dt><dd>Texas</dd></div>
+    <div class="fact"><dt>Country</dt><dd>United States</dd></div>
+    <div class="fact"><dt>Coordinates</dt><dd class="mono">30°14'36.6"N 97°43'18.5"W</dd></div>
+  </dl>
+
+  <p class="foot">
+    <a href="../index.html">All locations</a>
+  </p>
+</div>
+
+<script src="../assets/world.js"></script>
+<script src="../assets/locations.js"></script>
+<script src="../assets/map.js"></script>
+<script>
+  var slug = "oracle-austin";
+  var focus = window.LOCATIONS.filter(function (l) { return l.slug === slug; })[0];
+  window.renderMap(document.getElementById('map'), focus, window.LOCATIONS);
+</script>
+</body>
+</html>
