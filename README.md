@@ -50,8 +50,8 @@ otherwise vanish against the dark card. A logo that is *sparse white ink* would
 have the opposite problem, so those get a dark tile instead — detected by
 measuring the near-white fraction of the opaque pixels rather than by hand.
 
-Four customers have no logo: Ygnacio Center, Columbia Property Trust and WCI
-have no live site, and the City of Fremont publishes only a 16px favicon, too
-small to use. Those fall back to a CSS monogram of the customer's initials.
+Three customers have no logo: Ygnacio Center and WCI have no live site, and
+the City of Fremont publishes only a 16px favicon, too small to use. Those fall
+back to a CSS monogram of the customer's initials.
 
 The logos are third-party trademarks, reproduced to identify each customer.
