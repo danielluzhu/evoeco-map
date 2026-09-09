@@ -119,7 +119,9 @@ a { color: var(--accent); }
 .mapcard svg { cursor: default; }
 
 .site { cursor: pointer; }
-.site .hit { fill: transparent; pointer-events: all; }
+/* Not scoped to .site: detail pages put a hit circle inside .site-ctx too, and an
+   unfilled SVG circle paints solid black. */
+.hit { fill: transparent; pointer-events: all; }
 .site:focus { outline: none; }
 .site:focus-visible .halo { stroke: var(--ink); stroke-width: 1.2; }
 .site:hover .halo { fill: rgba(52, 211, 153, 0.3); }
