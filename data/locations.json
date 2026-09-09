@@ -576,5 +576,22 @@
     "logo": "cisco-san-jose.png",
     "initials": "C",
     "logoTile": "light"
+  },
+  {
+    "slug": "mcdonalds-chicago",
+    "customer": "McDonald's",
+    "site": "McDonald's global headquarters, 110 N Carpenter St",
+    "city": "Chicago",
+    "region": "Illinois",
+    "country": "United States",
+    "lat": 41.8838,
+    "lon": -87.6538,
+    "sector": "Food service",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to McDonald's global headquarters in Chicago.",
+    "logo": "mcdonalds-chicago.png",
+    "initials": "M",
+    "logoTile": "light"
   }
 ]
