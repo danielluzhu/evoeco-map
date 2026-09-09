@@ -525,5 +525,22 @@
     "logo": "genentech-south-san-francisco.png",
     "initials": "G",
     "logoTile": "light"
+  },
+  {
+    "slug": "abm-new-york",
+    "customer": "ABM",
+    "site": "ABM headquarters, One Liberty Plaza",
+    "city": "New York City",
+    "region": "New York",
+    "country": "United States",
+    "lat": 40.7097,
+    "lon": -74.0109,
+    "sector": "Facility services",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to ABM's headquarters in New York.",
+    "logo": "abm-new-york.png",
+    "initials": "ABM",
+    "logoTile": "light"
   }
 ]
