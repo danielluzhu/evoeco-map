@@ -559,5 +559,22 @@
     "logo": "pinterest-san-francisco.png",
     "initials": "P",
     "logoTile": "light"
+  },
+  {
+    "slug": "cisco-san-jose",
+    "customer": "Cisco",
+    "site": "Cisco headquarters, 170 W Tasman Dr",
+    "city": "San Jose",
+    "region": "California",
+    "country": "United States",
+    "lat": 37.4084,
+    "lon": -121.9541,
+    "sector": "Networking & communications",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to Cisco's San Jose headquarters.",
+    "logo": "cisco-san-jose.png",
+    "initials": "C",
+    "logoTile": "light"
   }
 ]

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cisco — San Jose, United States | EvoEco global map</title>
+<meta name="description" content="Global map of the EvoEco deployment at Cisco, San Jose, United States.">
+<link rel="icon" href="../assets/evoeco/favicon.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/evoeco/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/map.css">
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">EvoEco deployment &middot; Networking &amp; communications</p>
+  <h1>Cisco</h1>
+  <p class="sub">EvoEco brings smart waste data to Cisco&#x27;s San Jose headquarters.</p>
+
+  <div class="mapcard" id="map"></div>
+
+  <dl class="facts">
+    <div class="fact"><dt>Site</dt><dd>Cisco headquarters, 170 W Tasman Dr</dd></div>
+    <div class="fact"><dt>City</dt><dd>San Jose</dd></div>
+    <div class="fact"><dt>Region</dt><dd>California</dd></div>
+    <div class="fact"><dt>Country</dt><dd>United States</dd></div>
+    <div class="fact"><dt>Coordinates</dt><dd class="mono">37°24'30.2"N 121°57'14.8"W</dd></div>
+  </dl>
+
+  <p class="foot">
+    <a href="../index.html">All locations</a>
+  </p>
+</div>
+
+<script src="../assets/world.js"></script>
+<script src="../assets/locations.js"></script>
+<script src="../assets/map.js"></script>
+<script>
+  var slug = "cisco-san-jose";
+  var focus = window.LOCATIONS.filter(function (l) { return l.slug === slug; })[0];
+  window.renderMap(document.getElementById('map'), focus, window.LOCATIONS);
+</script>
+</body>
+</html>
