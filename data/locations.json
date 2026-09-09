@@ -610,5 +610,22 @@
     "logo": "oracle-austin.png",
     "initials": "O",
     "logoTile": "light"
+  },
+  {
+    "slug": "national-bank-of-canada-montreal",
+    "customer": "National Bank of Canada",
+    "site": "National Bank Place, 800 rue Saint-Jacques",
+    "city": "Montreal",
+    "region": "Quebec",
+    "country": "Canada",
+    "lat": 45.4992,
+    "lon": -73.5616,
+    "sector": "Banking",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to National Bank of Canada's head office in Montreal.",
+    "logo": "national-bank-of-canada-montreal.png",
+    "initials": "NBC",
+    "logoTile": "light"
   }
 ]
