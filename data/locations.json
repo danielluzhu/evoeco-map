@@ -491,5 +491,22 @@
     "logo": "humana-louisville.png",
     "initials": "H",
     "logoTile": "light"
+  },
+  {
+    "slug": "university-of-michigan-ann-arbor",
+    "customer": "University of Michigan",
+    "site": "Central Campus, Ann Arbor",
+    "city": "Ann Arbor",
+    "region": "Michigan",
+    "country": "United States",
+    "lat": 42.2752,
+    "lon": -83.7415,
+    "sector": "Higher education",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to the University of Michigan's Ann Arbor campus.",
+    "logo": "university-of-michigan-ann-arbor.png",
+    "initials": "UM",
+    "logoTile": "light"
   }
 ]
