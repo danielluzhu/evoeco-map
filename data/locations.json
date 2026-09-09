@@ -508,5 +508,22 @@
     "logo": "university-of-michigan-ann-arbor.png",
     "initials": "UM",
     "logoTile": "light"
+  },
+  {
+    "slug": "genentech-south-san-francisco",
+    "customer": "Genentech",
+    "site": "Genentech headquarters, 1 DNA Way",
+    "city": "South San Francisco",
+    "region": "California",
+    "country": "United States",
+    "lat": 37.6543,
+    "lon": -122.3826,
+    "sector": "Biotechnology",
+    "announced": null,
+    "post": null,
+    "headline": "EvoEco brings smart waste data to Genentech's South San Francisco campus.",
+    "logo": "genentech-south-san-francisco.png",
+    "initials": "G",
+    "logoTile": "light"
   }
 ]
